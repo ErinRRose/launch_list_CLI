@@ -10,4 +10,5 @@ require_relative "launch_list_CLI/launch"
 module LaunchListCLI
   class Error < StandardError; end
   # Your code goes here...
+
 end

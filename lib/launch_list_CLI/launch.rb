@@ -18,7 +18,7 @@ class Launch
 
     end
 
-    def iniitalize        
+    def initialize        
         @@all << self  
     end
 
