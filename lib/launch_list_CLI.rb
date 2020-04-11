@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 require 'httparty'
 
 require_relative "launch_list_CLI/version"
