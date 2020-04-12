@@ -1,3 +1,4 @@
-require_relative '..lib/launch_list_CLI'
+require_relative '../lib/launch_list_CLI'
 
-LaunchListCLI::CLI.new.start
+cli = LaunchListCLI::CLI.new
+cli.start
