@@ -1,5 +1,6 @@
+#require 'pry'
 class LaunchListCLI::Launch
-
+    
 
     attr_accessor :name, :location_name, :blurb, :date, :loc_link, :id
     @@all = []
@@ -14,7 +15,11 @@ class LaunchListCLI::Launch
             launch = LaunchListCLI::Launch.new
             launch.name = data["name"]
             launch.location_name = data["location"]["pads"][0]["name"]
-            launch.blurb = data["missions"]&[0]&["description"]
+            if data["missions"].length >= 1
+                launch.blurb = data["missions"][0]["description"]
+            else
+                launch.blurb = "No data available."
+            end
             launch.loc_link = data["location"]["pads"][0]["mapURL"]
             launch.date = data["net"]
             launch.id = data["id"]
@@ -47,5 +52,5 @@ end
 
 
  
-#Launch.load
+#LaunchListCLI::Launch.load
 #Launch.print_list

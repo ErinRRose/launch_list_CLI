@@ -3,8 +3,8 @@ require_relative 'lib/launch_list_CLI/version'
 Gem::Specification.new do |spec|
   spec.name          = "launch_list_CLI"
   spec.version       = LaunchListCLI::VERSION
-  spec.authors       = ["your_name"]
-  spec.email         = ["your_email@example.com"]
+  spec.authors       = ["Erin Rose"]
+  spec.email         = ["errose10@gmail.com"]
 
   spec.summary       = "summary"
   spec.description   = "desc"
