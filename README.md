@@ -8,13 +8,23 @@ This is a Ruby Gem with a CLI to view the 10 most current upcoming space launche
 Add this line to your application's Gemfile:
 
 ```ruby
+```
+
+
+
  $ gem install launch_list_CLI
 
 ## Usage
 
-TODO: Type the below and follow the prompts. 
+Type the below and follow the prompts.
 
-$ launch_list_CLI
+```ruby
+```
+
+
+
+ $ launch_list_CLI
+
 
 ## Development
 
