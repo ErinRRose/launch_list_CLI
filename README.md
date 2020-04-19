@@ -1,28 +1,20 @@
 # LaunchListCLI
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/launch_list_CLI`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a Ruby Gem with a CLI to view the 10 most current upcoming space launches from around the world.  Includes a mal url to view the site of the launch.  
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'launch_list_CLI'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install launch_list_CLI
+ $ gem install launch_list_CLI
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO: Type the below and follow the prompts. 
+
+$ launch_list_CLI
 
 ## Development
 

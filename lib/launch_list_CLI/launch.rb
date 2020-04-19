@@ -1,4 +1,5 @@
 #require 'pry'
+require 'colorize'
 class LaunchListCLI::Launch
     
 
@@ -31,18 +32,28 @@ class LaunchListCLI::Launch
 
     def self.print_list
         @@all.each_with_index do |launch, idx|
-        puts "#{idx+1}: #{launch.name}, #{launch.location_name}"
+        puts "#{idx+1}:".colorize( :light_cyan ) 
+        puts "#{launch.name}, #{launch.location_name}"
         end
     end
 
     def self.print_detail(selection)
         launch = @@all[selection-1]
-        puts "Name: #{launch.name}"
-        puts "Location: #{launch.location_name}"
-        puts "Description: #{launch.blurb}"
-        puts "Potential Date: #{launch.date}"
-        puts "Location URL: #{launch.loc_link}"
-    
+        puts ""
+        puts "Name:".colorize ( :light_cyan ) 
+        puts "#{launch.name}"
+        puts ""
+        puts "Location:".colorize ( :light_cyan )
+        puts "#{launch.location_name}"
+        puts ""
+        puts "Description:".colorize ( :light_cyan )
+        puts "#{launch.blurb}"
+        puts ""
+        puts "Potential Date:".colorize ( :light_cyan )
+        puts "#{launch.date}"
+        puts ""
+        puts "Location URL:".colorize ( :light_cyan )
+        puts "#{launch.loc_link}"
     end
 
 
