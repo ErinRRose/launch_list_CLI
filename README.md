@@ -1,6 +1,7 @@
 # LaunchListCLI
 
-This is a Ruby Gem with a CLI to view the 10 most current upcoming space launches from around the world.  Includes a mal url to view the site of the launch.  
+This is a Ruby Gem with a CLI to view the 10 most current upcoming space launches from around the world.  Includes a map url to view the site of the launch.  
+Launches are obtained from [Launch Library](https://launchlibrary.net/).
 
 
 ## Installation
